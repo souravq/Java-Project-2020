@@ -1,0 +1,706 @@
+import java.util.Scanner;
+import java.util.Random;
+import java.util.*;
+
+public class RockPaperScissorGame
+{
+	public static void main(String args[])
+	{
+		Scanner Scan=new Scanner(System.in);
+		Random Rand=new Random();
+		int player11Score=0;
+		int player12Score=0;
+		int player13Score=0;
+		int player14Score=0;
+		int player21Score=0;
+		int player22Score=0;
+		int player23Score=0;
+		int player24Score=0;
+		int player31Score=0;
+		int player32Score=0;
+		int player33Score=0;
+		int player34Score=0;
+		int player41Score=0;
+		int player42Score=0;
+		int player43Score=0;
+		int player44Score=0;
+		int limit=1;
+
+
+		while(limit<51)
+		{
+			System.out.println("****************** Rock Paper Scissor Game ***********************");
+			int player1Choice=1+Rand.nextInt(3);
+			int player2Choice=1+Rand.nextInt(3);
+			int player3Choice=1+Rand.nextInt(3);
+			int player4Choice=1+Rand.nextInt(3);
+			System.out.println("The"+limit+" Iteration:");
+			if(player1Choice==1)
+				System.out.println("Player1:"+"Rock");
+			else if (player1Choice==2)
+				System.out.println("Player1:"+"Paper");
+			else
+				System.out.println("Player1:"+"Scissor");
+
+			if(player2Choice==1)
+				System.out.println("Player2:"+"Rock");
+			else if (player2Choice==2)
+				System.out.println("Player2:"+"Paper");
+			else
+				System.out.println("Player2:"+"Scissor");
+
+			if(player3Choice==1)
+				System.out.println("Player3:"+"Rock");
+			else if (player3Choice==2)
+				System.out.println("Player3:"+"Paper");
+			else
+				System.out.println("Player3:"+"Scissor");
+
+			if(player4Choice==1)
+				System.out.println("Player4:"+"Rock");
+			else if (player4Choice==2)
+				System.out.println("Player4:"+"Paper");
+			else
+				System.out.println("Player4:"+"Scissor");
+
+
+
+             if(player1Choice==player2Choice)
+			{
+
+			}
+			else if(player1Choice==1)
+			{
+               if(player2Choice==2)
+               {
+               	
+               	player12Score++;
+           
+               }
+               else if(player2Choice==3)
+               {
+               	
+               	player11Score++;
+               	
+               }
+			}
+			else if(player1Choice==2)
+			{
+               if(player2Choice==1)
+               {
+               	
+               	player11Score++;
+               	
+               }
+               else if(player2Choice==3)
+               {
+               	
+               	player12Score++;
+               	
+               }
+			}
+			else if(player1Choice==3)
+			{
+				if(player2Choice==1)
+               {
+               	
+               	player12Score++;
+               	
+               }
+               else if(player2Choice==2)
+               {
+               	
+               	player11Score++;
+               	
+               }
+
+			}
+
+
+			 if(player1Choice==player3Choice)
+			{
+
+			}
+			else if(player1Choice==1)
+			{
+               if(player3Choice==2)
+               {
+               	
+               	player13Score++;
+           
+               }
+               else if(player3Choice==3)
+               {
+               	
+               	player11Score++;
+               	
+               }
+			}
+			else if(player1Choice==2)
+			{
+               if(player3Choice==1)
+               {
+               	
+               	player11Score++;
+               	
+               }
+               else if(player3Choice==3)
+               {
+               	
+               	player13Score++;
+               	
+               }
+			}
+			else if(player1Choice==3)
+			{
+				if(player3Choice==1)
+               {
+               	
+               	player13Score++;
+               	
+               }
+               else if(player3Choice==2)
+               {
+               	
+               	player11Score++;
+               	
+               }
+
+			}
+
+			 if(player1Choice==player4Choice)
+			{
+
+			}
+			else if(player1Choice==1)
+			{
+               if(player4Choice==2)
+               {
+               	
+               	player14Score++;
+           
+               }
+               else if(player4Choice==3)
+               {
+               	
+               	player11Score++;
+               	
+               }
+			}
+			else if(player1Choice==2)
+			{
+               if(player4Choice==1)
+               {
+               	
+               	player11Score++;
+               	
+               }
+               else if(player4Choice==3)
+               {
+               	
+               	player14Score++;
+               	
+               }
+			}
+			else if(player1Choice==3)
+			{
+				if(player4Choice==1)
+               {
+               	
+               	player14Score++;
+               	
+               }
+               else if(player4Choice==2)
+               {
+               	
+               	player11Score++;
+               	
+               }
+
+			}
+
+			System.out.println("Score Against Player1:");
+			System.out.println("Player1:      Player2:  "+player12Score+"    Player3: "+player13Score+"   player4:  "+player14Score);
+
+    
+
+    if(player2Choice==player1Choice)
+			{
+
+			}
+			else if(player2Choice==1)
+			{
+               if(player1Choice==2)
+               {
+               	
+               	player21Score++;
+           
+               }
+               else if(player1Choice==3)
+               {
+               	
+               	player22Score++;
+               	
+               }
+			}
+			else if(player2Choice==2)
+			{
+               if(player1Choice==1)
+               {
+               	
+               	player22Score++;
+               	
+               }
+               else if(player1Choice==3)
+               {
+               	
+               	player21Score++;
+               	
+               }
+			}
+			else if(player2Choice==3)
+			{
+				if(player1Choice==1)
+               {
+               	
+               	player21Score++;
+               	
+               }
+               else if(player1Choice==2)
+               {
+               	
+               	player22Score++;
+               	
+               }
+
+			}
+
+
+			 if(player2Choice==player3Choice)
+			{
+
+			}
+			else if(player2Choice==1)
+			{
+               if(player3Choice==2)
+               {
+               	
+               	player23Score++;
+           
+               }
+               else if(player3Choice==3)
+               {
+               	
+               	player22Score++;
+               	
+               }
+			}
+			else if(player2Choice==2)
+			{
+               if(player3Choice==1)
+               {
+               	
+               	player22Score++;
+               	
+               }
+               else if(player3Choice==3)
+               {
+               	
+               	player23Score++;
+               	
+               }
+			}
+			else if(player2Choice==3)
+			{
+				if(player3Choice==1)
+               {
+               	
+               	player23Score++;
+               	
+               }
+               else if(player3Choice==2)
+               {
+               	
+               	player22Score++;
+               	
+               }
+
+			}
+
+			 if(player2Choice==player4Choice)
+			{
+
+			}
+			else if(player2Choice==1)
+			{
+               if(player4Choice==2)
+               {
+               	
+               	player24Score++;
+           
+               }
+               else if(player4Choice==3)
+               {
+               	
+               	player22Score++;
+               	
+               }
+			}
+			else if(player2Choice==2)
+			{
+               if(player4Choice==1)
+               {
+               	
+               	player22Score++;
+               	
+               }
+               else if(player4Choice==3)
+               {
+               	
+               	player24Score++;
+               	
+               }
+			}
+			else if(player2Choice==3)
+			{
+				if(player4Choice==1)
+               {
+               	
+               	player24Score++;
+               	
+               }
+               else if(player4Choice==2)
+               {
+               	
+               	player22Score++;
+               	
+               }
+
+			}
+
+			System.out.println("Score Against Player2:");
+			System.out.println("Player1:  "+     player21Score+ "   Player2:       Player3: "+player23Score+"    player4:  "+player24Score);
+
+
+           
+            if(player3Choice==player2Choice)
+			{
+
+			}
+			else if(player3Choice==1)
+			{
+               if(player2Choice==2)
+               {
+               	
+               	player32Score++;
+           
+               }
+               else if(player2Choice==3)
+               {
+               	
+               	player33Score++;
+               	
+               }
+			}
+			else if(player3Choice==2)
+			{
+               if(player2Choice==1)
+               {
+               	
+               	player33Score++;
+               	
+               }
+               else if(player2Choice==3)
+               {
+               	
+               	player32Score++;
+               	
+               }
+			}
+			else if(player3Choice==3)
+			{
+				if(player2Choice==1)
+               {
+               	
+               	player32Score++;
+               	
+               }
+               else if(player2Choice==2)
+               {
+               	
+               	player33Score++;
+               	
+               }
+
+			}
+
+
+			 if(player3Choice==player1Choice)
+			{
+
+			}
+			else if(player3Choice==1)
+			{
+               if(player1Choice==2)
+               {
+               	
+               	player33Score++;
+           
+               }
+               else if(player1Choice==3)
+               {
+               	
+               	player31Score++;
+               	
+               }
+			}
+			else if(player3Choice==2)
+			{
+               if(player1Choice==1)
+               {
+               	
+               	player33Score++;
+               	
+               }
+               else if(player1Choice==3)
+               {
+               	
+               	player31Score++;
+               	
+               }
+			}
+			else if(player3Choice==3)
+			{
+				if(player1Choice==1)
+               {
+               	
+               	player31Score++;
+               	
+               }
+               else if(player1Choice==2)
+               {
+               	
+               	player33Score++;
+               	
+               }
+
+			}
+
+			 if(player3Choice==player4Choice)
+			{
+
+			}
+			else if(player3Choice==1)
+			{
+               if(player4Choice==2)
+               {
+               	
+               	player34Score++;
+           
+               }
+               else if(player4Choice==3)
+               {
+               	
+               	player31Score++;
+               	
+               }
+			}
+			else if(player3Choice==2)
+			{
+               if(player4Choice==1)
+               {
+               	
+               	player31Score++;
+               	
+               }
+               else if(player4Choice==3)
+               {
+               	
+               	player34Score++;
+               	
+               }
+			}
+			else if(player3Choice==3)
+			{
+				if(player4Choice==1)
+               {
+               	
+               	player34Score++;
+               	
+               }
+               else if(player4Choice==2)
+               {
+               	
+               	player31Score++;
+               	
+               }
+
+			}
+
+			System.out.println("Score Against Player3:");
+			System.out.println("Player1: "+player31Score+"     Player2:  "+player32Score+"    Player3:      player4:  "+player34Score);
+
+
+         if(player4Choice==player2Choice)
+			{
+
+			}
+			else if(player4Choice==1)
+			{
+               if(player2Choice==2)
+               {
+               	
+               	player42Score++;
+           
+               }
+               else if(player2Choice==3)
+               {
+               	
+               	player44Score++;
+               	
+               }
+			}
+			else if(player4Choice==2)
+			{
+               if(player2Choice==1)
+               {
+               	
+               	player44Score++;
+               	
+               }
+               else if(player2Choice==3)
+               {
+               	
+               	player42Score++;
+               	
+               }
+			}
+			else if(player4Choice==3)
+			{
+				if(player2Choice==1)
+               {
+               	
+               	player42Score++;
+               	
+               }
+               else if(player2Choice==2)
+               {
+               	
+               	player44Score++;
+               	
+               }
+
+			}
+
+
+			 if(player4Choice==player3Choice)
+			{
+
+			}
+			else if(player1Choice==1)
+			{
+               if(player3Choice==2)
+               {
+               	
+               	player43Score++;
+           
+               }
+               else if(player3Choice==3)
+               {
+               	
+               	player44Score++;
+               	
+               }
+			}
+			else if(player4Choice==2)
+			{
+               if(player3Choice==1)
+               {
+               	
+               	player44Score++;
+               	
+               }
+               else if(player3Choice==3)
+               {
+               	
+               	player43Score++;
+               	
+               }
+			}
+			else if(player4Choice==3)
+			{
+				if(player3Choice==1)
+               {
+               	
+               	player43Score++;
+               	
+               }
+               else if(player3Choice==2)
+               {
+               	
+               	player44Score++;
+               	
+               }
+
+			}
+
+			 if(player4Choice==player1Choice)
+			{
+
+			}
+			else if(player4Choice==1)
+			{
+               if(player1Choice==2)
+               {
+               	
+               	player41Score++;
+           
+               }
+               else if(player1Choice==3)
+               {
+               	
+               	player44Score++;
+               	
+               }
+			}
+			else if(player4Choice==2)
+			{
+               if(player1Choice==1)
+               {
+               	
+               	player44Score++;
+               	
+               }
+               else if(player1Choice==3)
+               {
+               	
+               	player41Score++;
+               	
+               }
+			}
+			else if(player4Choice==3)
+			{
+				if(player1Choice==1)
+               {
+               	
+               	player41Score++;
+               	
+               }
+               else if(player1Choice==2)
+               {
+               	
+               	player44Score++;
+               	
+               }
+
+			}
+
+			System.out.println("Score Against Player4:");
+			System.out.println("Player1:  "+player41Score+"    Player2:  "+player42Score+"    Player3: "+player43Score+"   player4:  ");
+
+            limit=limit+1;
+
+
+		}
+	}
+}
